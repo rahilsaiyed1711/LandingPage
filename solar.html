@@ -123,6 +123,112 @@
       from { transform: translateY(0); }
       to { transform: translateY(-10px); }
     }
+
+    /*responsiveness*/
+    /* Responsive Design */
+@media (max-width: 768px) {
+  #welcome h1 {
+    font-size: 2em;
+  }
+  #welcome button {
+    padding: 12px 24px;
+    font-size: 1em;
+  }
+
+  #about h2, #services h2, #contact h2 {
+    font-size: 2.5em;
+  }
+
+  #about p, #services p {
+    font-size: 1.1em;
+  }
+
+  .service, .contact-form, .service-card {
+    max-width: 100%;
+    margin: 10px 0;
+  }
+
+  .service h3, .service p, .service button {
+    font-size: 1.2em;
+  }
+
+  /* Stack the cards in a column */
+  .service, .service-card, .contact-form {
+    max-width: 100%;
+    text-align: center;
+    margin: 10px;
+  }
+
+  /* Contact form adjustments */
+  #contact form input, #contact form textarea {
+    width: 100%;
+    font-size: 1em;
+    padding: 12px;
+  }
+
+  /* About Section (For small screens) */
+  #about div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* For smaller screens (mobile), reduce padding and margin */
+  #welcome {
+    padding: 20px;
+  }
+
+  #about {
+    padding: 40px 20px;
+  }
+
+  #services {
+    padding: 40px 20px;
+  }
+
+  #contact {
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  #welcome h1 {
+    font-size: 1.5em;
+  }
+
+  #welcome button {
+    padding: 10px 20px;
+    font-size: 0.9em;
+  }
+
+  /* Adjust text size in About and Services section */
+  #about h2, #services h2, #contact h2 {
+    font-size: 2em;
+  }
+
+  #about p, #services p {
+    font-size: 1em;
+  }
+
+  .service h3 {
+    font-size: 1.5em;
+  }
+
+  .service p {
+    font-size: 1em;
+  }
+
+  /* Stack service cards vertically on small devices */
+  .service, .service-card, .contact-form {
+    max-width: 100%;
+    margin: 10px 0;
+  }
+
+  #contact form input, #contact form textarea {
+    padding: 10px;
+    font-size: 1em;
+  }
+}
+
   </style>
 </head>
 <body>
