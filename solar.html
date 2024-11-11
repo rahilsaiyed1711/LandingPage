@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solar Energy</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body, html {
+      font-family: Arial, sans-serif;
+      height: 100%;
+    }
+    
+    /* Welcome Section (Landing Page) */
+    #welcome {
+      height: 100vh;
+      background: linear-gradient(to bottom, #80e27e, #388e3c); /* Greenish Gradient */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      color: white;
+    }
+    #welcome h1 {
+      font-size: 3em;
+      animation: fadeIn 2s ease-in-out;
+    }
+    #welcome button {
+      padding: 15px 30px;
+      font-size: 1.2em;
+      color: #fff;
+      background-color: #2c6b2f; /* Darker Green */
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+      animation: bounce 2s infinite alternate;
+    }
+
+    /* About Section */
+    #about {
+      background-color: #f1f8f1; /* Light Green Background */
+      padding: 60px 20px;
+      text-align: center;
+    }
+    #about h2 {
+      margin-bottom: 20px;
+      color: #388e3c; /* Dark Green */
+    }
+    #about p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.2em;
+      color: #555;
+    }
+
+    /* Services Section */
+    #services {
+      background-color: #ffffff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    #services h2 {
+      margin-bottom: 20px;
+      color: #388e3c; /* Dark Green */
+    }
+    .service {
+      margin-bottom: 20px;
+      padding: 20px;
+      background-color: #e8f5e9; /* Lighter Green */
+      border-radius: 5px;
+    }
+    .service h3 {
+      color: #388e3c;
+    }
+
+    /* Contact Section */
+    #contact {
+      background-color: #f1f8f1; /* Light Green Background */
+      padding: 60px 20px;
+      text-align: center;
+    }
+    #contact h2 {
+      margin-bottom: 20px;
+      color: #388e3c; /* Dark Green */
+    }
+    #contact form input, #contact form textarea {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1.2em;
+    }
+    #contact form button {
+      background-color: #388e3c; /* Dark Green */
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Smooth Scroll for Links */
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes bounce {
+      from { transform: translateY(0); }
+      to { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Welcome Section -->
+  <div id="welcome">
+    <img src="AGEL.png" alt="Solar Company Logo" class="logo">
+    <h1>Powering the Future with Solar Energy</h1>
+    <button onclick="scrollToSection('about')">Explore</button>
+  </div>
+
+  <!-- About Section -->
+<!-- About Section -->
+<div id="about" style="background: url('https://via.placeholder.com/1600x900.png?text=Solar+Energy+Background') center/cover; padding: 80px 20px; color: #fff;">
+    <div style="text-align: center;">
+      <h2 style="font-size: 3em; color: #ffffff; font-weight: bold; margin-bottom: 20px;">About Solar Energy</h2>
+      <p style="max-width: 900px; margin: 0 auto; font-size: 1.5em; line-height: 1.6; color: #fff; opacity: 0.9;">
+        Solar energy is the most abundant, clean, and renewable energy source available to us. By harnessing the power of the sun, we can reduce our carbon footprint and transition to a more sustainable energy future. Our solar panel systems help reduce energy costs, while contributing to a cleaner environment for all.
+      </p>
+    </div>
+  
+    <div style="display: flex; justify-content: center; gap: 30px; margin-top: 40px;">
+      <!-- Solar Energy Facts Card 1 -->
+      <div style="background: rgba(255, 255, 255, 0.8); padding: 40px; border-radius: 10px; max-width: 300px; text-align: center; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);">
+        <h3 style="font-size: 2em; color: #388e3c; margin-bottom: 20px;">Clean and Renewable</h3>
+        <p style="font-size: 1.2em; color: #333;">Solar energy is a renewable resource, meaning it will never run out. It provides a clean alternative to fossil fuels.</p>
+      </div>
+  
+      <!-- Solar Energy Facts Card 2 -->
+      <div style="background: rgba(255, 255, 255, 0.8); padding: 40px; border-radius: 10px; max-width: 300px; text-align: center; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);">
+        <h3 style="font-size: 2em; color: #388e3c; margin-bottom: 20px;">Cost-Effective</h3>
+        <p style="font-size: 1.2em; color: #333;">Once installed, solar panels significantly reduce your energy bills, saving you money in the long term.</p>
+      </div>
+  
+      <!-- Solar Energy Facts Card 3 -->
+      <div style="background: rgba(255, 255, 255, 0.8); padding: 40px; border-radius: 10px; max-width: 300px; text-align: center; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);">
+        <h3 style="font-size: 2em; color: #388e3c; margin-bottom: 20px;">Sustainable Future</h3>
+        <p style="font-size: 1.2em; color: #333;">Solar energy helps reduce greenhouse gas emissions, contributing to a cleaner, greener planet for future generations.</p>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Services Section -->
+  <!-- Services Section -->
+<div id="services" style="background: #f1f8f1; padding: 80px 20px; color: #333;">
+    <div style="text-align: center; margin-bottom: 40px;">
+      <h2 style="font-size: 3em; color: #388e3c; font-weight: bold; margin-bottom: 20px;">Our Services</h2>
+      <p style="font-size: 1.5em; color: #555; max-width: 800px; margin: 0 auto; line-height: 1.6;">We offer a wide range of solar energy services that can help you transition to a more sustainable energy solution. From installation to maintenance and consultation, we are here to support your solar energy journey.</p>
+    </div>
+  
+    <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+  
+      <!-- Solar Panel Installation Card -->
+      <div style="background: #ffffff; padding: 40px; border-radius: 10px; max-width: 350px; text-align: center; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+        <img src="AGEL.png" alt="Solar Panel Installation" style="width: 100px; height: 100px; margin-bottom: 20px;">
+        <h3 style="font-size: 2em; color: #388e3c; margin-bottom: 20px;">Solar Panel Installation</h3>
+        <p style="font-size: 1.2em; color: #333; margin-bottom: 20px;">We provide professional and efficient installation of high-quality solar panels for both residential and commercial properties.</p>
+        <button style="background-color: #388e3c; color: white; padding: 15px 30px; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;">
+          Learn More
+        </button>
+      </div>
+  
+      <!-- Maintenance & Repair Card -->
+      <div style="background: #ffffff; padding: 40px; border-radius: 10px; max-width: 350px; text-align: center; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+        <img src="AGEL.png" alt="Maintenance and Repair" style="width: 100px; height: 100px; margin-bottom: 20px;">
+        <h3 style="font-size: 2em; color: #388e3c; margin-bottom: 20px;">Maintenance & Repair</h3>
+        <p style="font-size: 1.2em; color: #333; margin-bottom: 20px;">Our team provides expert maintenance and repair services to ensure your solar panel system operates at maximum efficiency.</p>
+        <button style="background-color: #388e3c; color: white; padding: 15px 30px; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;">
+          Learn More
+        </button>
+      </div>
+  
+      <!-- Solar Consultation Card -->
+      <div style="background: #ffffff; padding: 40px; border-radius: 10px; max-width: 350px; text-align: center; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+        <img src="AGEL.png" alt="Solar Consultation" style="width: 100px; height: 100px; margin-bottom: 20px;">
+        <h3 style="font-size: 2em; color: #388e3c; margin-bottom: 20px;">Solar Consultation</h3>
+        <p style="font-size: 1.2em; color: #333; margin-bottom: 20px;">Get expert advice and tailored solutions for your solar energy needs. We help you make informed decisions that save energy and costs.</p>
+        <button style="background-color: #388e3c; color: white; padding: 15px 30px; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;">
+          Learn More
+        </button>
+      </div>
+  
+    </div>
+  </div>
+  
+
+  <!-- Contact Section -->
+  <!-- Contact Us Section -->
+<div id="contact" style="background: #388e3c; padding: 80px 20px; color: #fff;">
+    <div style="text-align: center; margin-bottom: 40px;">
+      <h2 style="font-size: 3em; font-weight: bold; margin-bottom: 20px;">Contact Us</h2>
+      <p style="font-size: 1.5em; max-width: 800px; margin: 0 auto; line-height: 1.6;">We’d love to hear from you! Whether you have questions about solar energy or want to discuss our services, feel free to reach out. Our team is ready to assist you!</p>
+    </div>
+  
+    <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+  
+      <!-- Contact Form -->
+      <div style="background: #ffffff; padding: 40px; border-radius: 10px; max-width: 500px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);">
+        <h3 style="font-size: 2em; color: #388e3c; margin-bottom: 20px; text-align: center;">Get in Touch</h3>
+        <form action="#" method="post" style="display: flex; flex-direction: column; gap: 20px;">
+          <input type="text" name="name" placeholder="Your Name" style="padding: 15px; font-size: 1em; border-radius: 5px; border: 1px solid #ddd; outline: none; transition: all 0.3s ease;">
+          <input type="email" name="email" placeholder="Your Email" style="padding: 15px; font-size: 1em; border-radius: 5px; border: 1px solid #ddd; outline: none; transition: all 0.3s ease;">
+          <textarea name="message" placeholder="Your Message" style="padding: 15px; font-size: 1em; border-radius: 5px; border: 1px solid #ddd; outline: none; height: 150px; transition: all 0.3s ease;"></textarea>
+          <button type="submit" style="background-color: #388e3c; color: white; padding: 15px 30px; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;">Send Message</button>
+        </form>
+      </div>
+  
+      <!-- Contact Details -->
+      <div style="background: #ffffff; padding: 40px; border-radius: 10px; max-width: 350px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);">
+        <h3 style="font-size: 2em; color: #388e3c; margin-bottom: 20px; text-align: center;">Contact Info</h3>
+        <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+          <img src="https://via.placeholder.com/30" alt="Phone Icon" style="width: 30px; height: 30px;">
+          <p style="font-size: 1.2em; color: #333;">+1 (555) 123-4567</p>
+        </div>
+        <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+          <img src="https://via.placeholder.com/30" alt="Email Icon" style="width: 30px; height: 30px;">
+          <p style="font-size: 1.2em; color: #333;">info@solarenergy.com</p>
+        </div>
+        <div style="display: flex; align-items: center; gap: 15px;">
+          <img src="https://via.placeholder.com/30" alt="Location Icon" style="width: 30px; height: 30px;">
+          <p style="font-size: 1.2em; color: #333;">123 Solar St, Green City, EcoLand</p>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  
+
+  <script>
+    // Scroll to section function
+    function scrollToSection(id) {
+      const section = document.getElementById(id);
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
